@@ -15,7 +15,14 @@ Run in debug mode:
 $ python app.py
 ```
 
-Run in production mode:
+Make sure the data is downloaded from s3:
+```
+$ python getdata.py
+```
+(You can ignore the warning `WARNING:ThreadPoolExecutor-1_31:urllib3.connectionpool:Connection pool is full, discarding connection: vaex.s3.amazonaws.com`)
+
+
+Run in production mode (make sure the data is downloaded if you stream from s3):
 ```
 $ VAEX_NUM_THREADS=8 gunicorn -w 16 app:server -b 0.0.0.0:8050
 ```
@@ -28,4 +35,3 @@ $ export VAEX_NUM_THREADS=16     # change the number of threads per process/work
 $ export DASH_CACHE_TIMEOUT=240  # increase cache timeout to 4 minutes
 $ export DASH_CACHE_TIMEOUT=-1  # disable cache (useful for benchmarking)
 ```
-
