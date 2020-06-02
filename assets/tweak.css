@@ -1,0 +1,90 @@
+.tab {
+    border: 0px !important;
+    background-color: #F6F6F6 !important;
+    color: #888 !important;
+}
+.tab--selected {
+    border-top: 0px !important;
+    border-bottom: 2px solid #96dbfa !important;
+    background-color: #F9F9F9!important;
+    color: #333 !important;
+}
+.tab span {
+    text-transform: uppercase !important;
+}
+
+.tab-parent {
+    margin: 10px;
+}
+.label {
+    font-size 1.1em !important;
+}
+
+/* removing styling for active cell */
+
+td.cell--selected, td.dash-cell {
+    background-color: transparent !important;
+    border-bottom: 1px solid rgb(211, 211, 211) !important;
+    border-top: 1px solid rgb(211, 211, 211) !important;
+}
+
+.data_summary_filtered {
+    padding-top: 8px;
+    font-size 1.1em !important;
+}
+
+progress {
+    background-color: #e9e9e9 !important;
+    width: 90%;
+    margin-left: 10px
+}
+
+progress::-webkit-progress-bar {
+    background-color: #e9e9e9 !important;
+}
+
+progress::-webkit-progress-value {
+    background-color: #96dbfa !important;
+}
+
+progress::-moz-progress-bar {
+    background-color: #96dbfa !important;
+}
+
+#data_summary_filtered > p {
+    margin-bottom: 0px !important;
+}
+
+.tab-content {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.dash-spinner::before {
+    content: "Processing 117,444,062 rows" !important;
+    font-size: 12pt !important;
+    vertical-align: text-bottom !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    /* line-height: 33pt; */
+    display: block;
+}
+
+.dash-spinner {
+    width: unset !important;
+    /* margin-top: -25px !important; */
+}
+
+.dash-default-spinner > div {
+    background-color: #96dbfa !important;
+}
+
+._dash-loading-callback {
+    bottom: 0;
+    right: 0;
+}
+
+body {
+    position: relative !important;
+}
+
