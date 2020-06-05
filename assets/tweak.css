@@ -61,7 +61,7 @@ progress::-moz-progress-bar {
 }
 
 .dash-spinner::before {
-    content: "Processing 117,444,062 rows" !important;
+    content: "Processing 120,689,939 rows" !important;
     font-size: 12pt !important;
     vertical-align: text-bottom !important;
     margin-left: 10px !important;
