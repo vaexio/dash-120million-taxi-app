@@ -7,7 +7,7 @@ Explore 120 million taxi trips in real time with Dash and Vaex
 
 Clone the repo
 ```
-$ git clone https://github.com/vaexio/dash-117million-taxi-app
+$ git clone https://github.com/vaexio/dash-120million-taxi-app
 ```
 
 Run in debug mode:
