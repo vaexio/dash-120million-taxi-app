@@ -1,7 +1,7 @@
 # dash-120million-taxi-app
 Explore 120 million taxi trips in real time with Dash and Vaex
 
-![alt text](<cover.png>)
+![img](cover.png)
 
 # Running this app
 
