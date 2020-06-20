@@ -129,7 +129,7 @@ def create_figure_empty():
     layout = go.Layout(plot_bgcolor='white', width=10, height=10,
                        xaxis=go.layout.XAxis(visible=False),
                        yaxis=go.layout.YAxis(visible=False))
-    return go.FigureWidget(layout=layout)
+    return go.Figure(layout=layout)
 
 
 # Taken from https://dash.plotly.com/datatable/conditional-formatting
@@ -206,7 +206,7 @@ def create_figure_histogram(x, counts, title=None, xlabel=None, ylabel=None):
     # Now calculate the most likely value (peak of the histogram)
     peak = np.round(x[np.argmax(counts)], 2)
 
-    return go.FigureWidget(data=traces, layout=layout), peak
+    return go.Figure(data=traces, layout=layout), peak
 
 
 def create_figure_heatmap(data_array, heatmap_limits, trip_start, trip_end):
