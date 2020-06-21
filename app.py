@@ -26,6 +26,9 @@ logger = logging.getLogger('vaex-dash')
 
 external_stylesheets = []
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app.title = "Dash+Vaex"
+app.css.config.serve_locally = False
+app.scripts.config.serve_locally = False
 server = app.server  # used by gunicorn in production mode
 cache = Cache(app.server, config={
     'CACHE_TYPE': 'filesystem',
