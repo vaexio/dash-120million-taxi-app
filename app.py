@@ -115,7 +115,9 @@ and aggregations which are passed to Plotly to create beautiful diagrams. The da
 million trips conducted by the Yellow Taxies throughout New York City in 2012, and is available via the [Taxi &
 Limousine Commission](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
 
-Read [this article](link_placeholder) to learn how to create such dashboards with Vaex and Dash.
+Read [this article](https://medium.com/plotly/interactive-and-scalable-dashboards-with-vaex-and-dash-9b104b2dc9f0) to learn how to create such dashboards with Vaex and Dash.
+
+Checkout the [GitHub repo](https://github.com/vaexio/dash-120million-taxi-app) for the sourcecode.
 '''
 
 overview_md = f'''
