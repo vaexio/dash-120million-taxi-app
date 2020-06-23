@@ -115,3 +115,22 @@ Percentage of the requests served within a certain time (ms)
   99%   7281
  100%   7329 (longest request)
 ```
+
+# Run/reproduce on AWS EC2
+
+Create an ubuntu ec2 instance (with e.g. ubunto 18.x).
+
+```
+$ sudo apt-get update
+$ sudo apt install gunicorn3 python3-pip
+$ git clone https://github.com/vaexio/dash-120million-taxi-app
+$ cd dash-120million-taxi-app
+$ python3 -m pip install -U pip
+$ python3 -m pip install -r requirements.txt
+$ sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8050
+$ python3 getdata.py 
+$ DASH_CACHE_TIMEOUT=-1 VAEX_NUM_THREADS=8 gunicorn3 -w 16 app:server -b 0.0.0.0:8050
+# different terminal
+$ sudo apt install apache2-utils
+# run above commands
+```
